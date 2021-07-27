@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Ayrton Hora e José Arnaldo, UFS - B.D 2020.2">
+      <title> DataFlix </title>
+      <link rel="shortcut icon" sizes="32x32" href="assets/logos/mini_icon.png"> 
+      <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          }
+        }
+    </style>
+    <link href="./assets/styles/conta_style.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark text-white">
+      <header class="p-3 text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <a href="home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white">
+              <img src="assets/backgrounds/dataflix.png" alt="" width="175" height="50">
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="home.html" class="nav-link px-2 text-white"> Início </a></li>
+              <li><a href="minha_lista.html" class="nav-link px-2 text-white"> Minha lista </a></li>
+              <li><a href="filmes.html" class="nav-link px-2 text-white"> Filmes </a></li>
+              <li><a href="series.html" class="nav-link px-2 text-white"> Séries </a></li>
+              <li><a href="sobre.html" class="nav-link px-2 text-white"> Sobre </a></li>
+            </ul>
+            <div class="col-12 col-md-auto mb-3 mb-lg-0 me-lg-3">
+              <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Conta
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="conta.html"> Configurações da conta </a></li>
+                  <li><a class="dropdown-item" href="perfis.html"> Trocar perfil </a></li>
+                  <li><a class="dropdown-item" href="index.html"> Sair </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="py-5 row g-5 row flex justify-content-center">
+            <div class="col-md-7 col-lg-8">
+              <h1> 
+                Conta 
+              </h1>
+              <br>
+              <h3 class="mb-3 text-secondary " id="membro">
+                Membro desde:
+              </h3>
+              <hr> 
+              <h3 class="mb-3 text-secondary">
+                Dados Pessoais
+              </h3>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nomecompleto" class="form-label"> 
+                      Nome completo:
+                    </label>
+                    <input type="text" class="form-control" id="nomecompleto" placeholder="" value="" disabled>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cpf" class="form-label"> 
+                      CPF:
+                    </label>
+                    <input type="text" class="form-control" id="contacpf" value="" disabled>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label"> 
+                      E-mail:
+                    </label>
+                    <input type="email" class="form-control" id="contaemail" value="" disabled> 
+                  </div>
+                  <div class="col-md-6">
+                    <label for="telefone" class="form-label"> 
+                      Telefone: 
+                    </label>
+                    <input type="number" class="form-control"  id="contatelefone" value="" disabled>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="senha" class="form-senha"> 
+                      Senha: 
+                    </label>
+                    <input type="password" class="form-control" id="contasenha" value="" disabled>
+                  </div>
+                  <hr>
+                  <h3 class="mb-3 text-secondary">
+                    Dispositivos
+                  </h3>
+                  <div id="contadispositivos"> </div>
+                  <hr>
+                  <h3 class="mb-3 text-secondary">
+                    Perfis
+                  </h3>
+                  <div id="contaperfis"> </div>
+                  <hr>
+                  <h3 class="mb-3 text-secondary">
+                    Cartões de crédito
+                  </h3>
+                  <div id="contacartao"> </div>
+                </div>
+              </form> 
+            </div>
+          </div> 
+        </div>  
+      </main>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1"> &copy; Ayrton Hora e José Arnaldo </p>
+        <p class="mb-2"> UFS - B.D 2020.2 </p>
+        <p class="mb-3"> 2021 </p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"> Termos e Privacidade </a></li>
+          <li class="list-inline-item"><a href="#"> Suporte </a></li>
+        </ul>
+      </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <script src='conta_dados.js'></script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "dataflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "scripts": {
+    "test": "node database.js",
+    "login": "node login.js",
+    "conta": "node conta.js",
+    "usuario": "node usuario.js",
+    "perfis": "node perfis.js",
+    "cartao_credito": "node cartao_credito.js",
+    "dispositivos": "node dispositivos.js",
+    "titulo": "node titulo.js",
+    "episodio": "node episodio.js"
+  },
+  "author": "Ayrton Hora",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.6.0"
+  }
+}
